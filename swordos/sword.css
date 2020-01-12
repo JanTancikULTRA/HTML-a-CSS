@@ -1,0 +1,69 @@
+
+html, body {
+  box-sizing: border-box;
+  background: radial-gradient(circle, rgb(0, 211, 0), black);
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#sword {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin: 0 auto;
+  padding: 0 auto;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+#blade {
+  height: 0;
+  width: 20px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 100px solid grey;
+}
+#tip {
+  position: absolute;
+  left: 0;
+  top: -30px;
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid grey;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+#handle {
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  background: black;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+#grip {
+  position: absolute;
+  width: 14px;
+  height: 40px;
+  background: black;
+  left: 13px;
+}
+#pommel {
+  width: 20px;
+  height: 20px;
+  background: #00FFFF;
+  position: absolute;
+  top: 130px;
+  left: 10px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+#sword:hover {
+  transform: rotate(540deg);
+  -moz-transform: rotate(540deg);
+  -webkit-transform: rotate(540deg);
+}
